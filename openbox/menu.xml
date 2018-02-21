@@ -1,0 +1,2 @@
+<menu id="obmenu-generator" label="openbox" 
+execute="/usr/bin/obmenu-generator -i"/>

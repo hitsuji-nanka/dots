@@ -1,0 +1,16 @@
+export ENV=~/.sh/interactive
+export BASH_ENV=~/.bash/env
+export MANPAGER=/bin/less
+. ~/.shell/env_functions
+
+#=== Aliases ===#
+# Make changing dirs easier
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+
+
+# Enable sudoing of aliases
+alias sudo='sudo '
+
+ssource ~/.shell/env_local

@@ -1,0 +1,13 @@
+# .bash_profile
+
+. ~/.bash/env
+BASH_ENV=
+
+. ~/.bash/login
+
+if [ "$PS1" ]; then
+	. ~/.bash/interactive
+fi
+
+# Get the aliases and functions
+[ -f $HOME/.bashrc ] && . $HOME/.bashrc

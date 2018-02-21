@@ -1,0 +1,12 @@
+# .bashrc
+
+. ~/.bash/env
+. ~/.bash/interactive
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+alias xi='sudo xbps-install'
+
+PS1='[\u@\h \W]\$ '

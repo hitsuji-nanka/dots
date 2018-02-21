@@ -1,0 +1,8 @@
+if [ -t 0 ]; then
+	# other users shouldn't be able to message by default
+	mesg n
+
+	# enable colors
+#	if [ `tput colors` -ge 8 ]; then
+#	fi
+fi

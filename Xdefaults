@@ -1,0 +1,48 @@
+
+
+Urxvt.termName:		screen-256color
+URxvt*font:		xft:Hack:pixelsize=13:antialias=true:autohinting=true,xft:Noto Emoji
+URxvt*scrollBar:	false
+URxvt.intensityStyles:	true
+URxvt.depth:		24
+URxvt*transparency:	false
+URxvt*backgroud:	black
+URxvt*foreground:	#009688
+
+! black
+*color0:		#2c3e50
+*color8:		#34495e
+! red
+*color1:		#c0392b
+*color9:		#e74c3c
+! green
+*color2:		#27ae60
+*color10:		#2ecc71
+! yellow
+*color3:		#f39c12
+*color11:		#f1c40f
+! blue
+*color4:		#2980b9
+*color12:		#3498db
+! purple
+*color5:		#8e44ad
+*color13:		#9b59b6
+! cyan
+*color6:		#16a085
+*color14:		#1abc9c
+! white
+*color7:		#bdc3c7
+*color15:		#ecf0f1
+
+URxvt.geometry:		100x30
+URxvt.colorUL:		#16a085
+URxvt.underlineColor:	#16a085
+ 
+Xft.dpi:		96
+Xft.antialias:		true
+Xft.hinting:		true
+Xft.rgba:		rgb
+Xft.autohint:		false
+Xft.hintstyle:		hintslight
+Xft.lcdfilter:		lcddefault
+ 

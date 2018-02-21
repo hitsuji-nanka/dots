@@ -1,0 +1,19 @@
+# whoami
+export NAME='Hitsuji'
+export EMAIL='hitsuji@tutanota.com'
+
+# Pref Progs
+export PAGER=less
+export EDITOR=micro
+export VISUAL=$EDITOR
+
+# Langs
+export LANG='en_US.UTF-8'
+
+# Path
+pathprepend ~/bin PATH
+#pathprepend ~/lib LD_LIBRARY_PATH
+#pathprepend ~/include CPATH
+
+pathremove . PATH
+pathremove "" PATH

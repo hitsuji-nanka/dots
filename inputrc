@@ -1,0 +1,81 @@
+# tab completion works regardless of caps
+set completion-ignore-case on
+
+# List all possible matches for tab
+set show-all-if-ambiguous on
+
+# immediately add a trailing slash when autocompleting symlinks to dirs
+set mark-symlinked-directories on
+
+# Show all autocomplete pages at once
+set page-completion off
+
+set completion-query-items 200
+
+# Show extra file info when completing
+set visible-stats on
+
+# Sane tab completion setting (this should be the default honestly)
+set skip-completed-text on
+
+# No 8-bit letters, but UTF-8 enabled
+set input-meta on
+set output-meta on
+set convert-meta off
+
+
+# All stuff past this line is default from /etc/inputrc
+
+# try to enable the application keypad when it is called.  Some systems
+# need this to enable the arrow keys.
+# set enable-keypad on
+
+# see /usr/share/doc/bash/inputrc.arrows for other codes of arrow keys
+
+# do not bell on tab-completion
+# set bell-style none
+# set bell-style visible
+
+# some defaults / modifications for the emacs mode
+$if mode=emacs
+
+# allow the use of the Home/End keys
+"\e[1~": beginning-of-line
+"\e[4~": end-of-line
+
+# allow the use of the Delete/Insert keys
+"\e[3~": delete-char
+"\e[2~": quoted-insert
+
+# mappings for "page up" and "page down" to step to the beginning/end
+# of the history
+# "\e[5~": beginning-of-history
+# "\e[6~": end-of-history
+
+# alternate mappings for "page up" and "page down" to search the history
+# "\e[5~": history-search-backward
+# "\e[6~": history-search-forward
+
+# mappings for Ctrl-left-arrow and Ctrl-right-arrow for word moving
+"\e[1;5C": forward-word
+"\e[1;5D": backward-word
+"\e[5C": forward-word
+"\e[5D": backward-word
+"\e\e[C": forward-word
+"\e\e[D": backward-word
+
+$if term=rxvt
+"\e[8~": end-of-line
+"\eOc": forward-word
+"\eOd": backward-word
+$endif
+
+# for non RH/Debian xterm, can't hurt for RH/Debian xterm
+# "\eOH": beginning-of-line
+# "\eOF": end-of-line
+
+# for freebsd console
+# "\e[H": beginning-of-line
+# "\e[F": end-of-line
+
+$endif
