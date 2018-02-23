@@ -1,7 +1,7 @@
 {
     "autoclose": true,
     "autoindent": true,
-    "autosave": false,
+    "autosave": true,
     "c++-formatter": "",
     "c-formatter": "",
     "clojure-formatter": "",
@@ -45,7 +45,7 @@
     "markdown-formatter": "",
     "marko-formatter": "",
     "misspell": true,
-    "mouse": true,
+    "mouse": false,
     "objective-c-formatter": "",
     "ocaml-formatter": "",
     "p-formatter": "",

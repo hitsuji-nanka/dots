@@ -1,4 +1,4 @@
 polybar openbox-bar &
 sxhkd &
-feh --bg-fill ~/img/taken.png &
+feh --bg-fill ~/img/taken.png
 openvpn --config /etc/openvpn/mullvad_se.conf &
